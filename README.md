@@ -1,2 +1,3 @@
-# GWO-
+# GWO
+
 Gray Wolf Optimization
