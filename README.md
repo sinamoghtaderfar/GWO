@@ -62,5 +62,36 @@ Finally, in the image below, the variable a is equal to 0. It means that the opt
 
 ![gwo_gif2](https://github.com/sinamoghtaderfar/GWO-/assets/72755430/0cb9cecd-787d-4f70-b180-655df87305ae)
 
+5. Applications
+
+![translated_image_en](https://github.com/sinamoghtaderfar/GWO-/assets/72755430/3e4c5cd8-5912-40f1-b321-ef5fd6421b71)
+
+5.1. Hyperparameter Tuning
+One interesting application might be hyperparameter tuning of any machine learning algorithm. The main idea behind hyperparameter tuning is to find an optimum set of values for parameters in order to maximize the performance of a given algorithm.
+
+For instance, using GWO we could optimize hyperparameters of Gradient Boosting. In that case, we can construct the position vector in a way where each of the vector components for a value has a particular hyperparameter. For example, X = (learning rate, number of trees, maximum depth). The parameters don’t have to have a numeric value at all because we can always define our own metrics for calculating the distance between agents.
+
+5.2. Feature Selection
+Another application of GWO that is also related to machine learning is feature selection. The algorithm works by constructing a set of possible features and iteratively modifying these features based on some performance measure until the desired solution is found.
+
+This approach is a lot cheaper in terms of time complexity since the complexity for choosing the best subset of features increases exponentially with every additional variable. This is because the total number of subsets of a set with n elements is 2^{n}. It means that if we have 30 different features as an input into the machine learning algorithm, as a result, the number of possible subsets of 30 features is 2^{30}=1.073.741.824!
+
+Thus, it would be more feasible to represent 30 features as a binary vector with a size of 30 (each bit is one particular feature, 1 indicates that the feature is included and 0 that it is not). That binary vector represents the position of the agent and could be easily used by GWO or any other metaheuristics.
+
+5.3. Other Examples
+Besides the above examples, the GWO has been successfully used in solving various problems such as:
+
+the traveling salesman problem (TSP)
+the minimum spanning tree problem
+non-linear equation systems
+power flow problem and other
+6. Conclusion
+In this article, we’ve described the intuition and logic behind the GWO algorithm to provide a better understanding of how we can apply it to solve some optimization problems. We introduced this algorithm because it is quite effective, yet simple enough to be easily understood. The article explores what a GWO is, an example of how it works and provides several key considerations on the examples of applications.
+
+Comments are closed on this article!
+
+https://www.baeldung.com/cs/grey-wolf-optimization
+
+https://doi.org/10.1007/s00521-017-3272-5
 
 
